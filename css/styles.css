@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Milkshake';
+  src: url("Milkshake.woff2") format("woff2"), url("Milkshake.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* color scheme
+Red - #c6552c;
+Mango - #daa03d;
+Tan - #f5e7cb; */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1b1c1b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+body header {
+  background-color: #171816;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header h1 {
+  font-family: Milkshake;
+  font-size: 3.2rem;
+  margin: 1.6rem;
+  color: #f5e7cb;
+}
+
+body header svg {
+  margin-right: 1.6rem;
+}
+
+body main .for-designers {
+  background-image: url("../img/banner320.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 4.8rem;
+}
+
+body main .for-designers div {
+  margin: 1.6rem 1.6rem 0;
+  padding: 5.4rem 1.6rem 0;
+  background-color: #daa03d;
+  text-align: center;
+}
+
+body main .for-designers div h2 {
+  font-family: Milkshake;
+  font-size: 3.9rem;
+  margin-bottom: 1.6rem;
+}
+
+body main .for-designers div hr {
+  border: 2px solid #c6552c;
+  margin: 0 46%;
+}
+
+body main .for-designers div p {
+  margin-top: 1.6rem;
+  padding-bottom: 5.4rem;
+  line-height: 1.5;
+}
+
+body main .articles div {
+  padding-bottom: 6.4rem;
+}
+
+body main .articles div h2 {
+  color: #c6552c;
+  font-weight: 900;
+  margin: 7.8rem 1.6rem 1rem;
+}
+
+body main .articles div h3 {
+  font-family: Milkshake;
+  font-size: 3rem;
+  margin: 0 1.6rem 1.6rem;
+  color: #f5e7cb;
+}
+
+body main .articles div p {
+  color: #f5e7cb;
+  font-family: 'B612', sans-serif;
+  font-size: 1.6rem;
+  margin: 3.2rem 1.6rem 1.6rem;
+  padding: 0 0 2rem;
+}
+
+body main .articles div a {
+  font-family: 'B612', sans-serif;
+  color: #f5e7cb;
+  text-decoration: none;
+  border-top: 1px solid #f5e7cb;
+  border-bottom: 1px solid #f5e7cb;
+  padding: 1rem;
+  margin: 1.6rem;
+}
+
+body main .articles div a:hover {
+  color: #171816;
+  border-color: #daa03d;
+  background-color: #daa03d;
+}
+
+body main .guides {
+  padding-top: 7.5rem;
+  background-color: #daa03d;
+  margin: 2rem 0 0;
+}
+
+body main .guides .banner-card {
+  position: relative;
+  margin: 0 1.6rem;
+  background-color: #171816;
+}
+
+body main .guides .banner-card h2 {
+  padding: 2.2rem 0 0 1.6rem;
+  color: #c6552c;
+  font-weight: 900;
+}
+
+body main .guides .banner-card h3 {
+  padding: 1.8rem 0 1.2rem 1.6rem;
+  font-family: Milkshake;
+  font-size: 3rem;
+  color: #f5e7cb;
+}
+
+body main .guides .banner-img {
+  margin-top: -6rem;
+  width: 100%;
+}
+
+body main .guides ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+body main .guides ul li {
+  font-family: 'B612', sans-serif;
+  padding: 1.6rem 0 0 1.6rem;
+}
+
+body main .guides ul li:last-of-type {
+  padding-bottom: 1.6rem;
+}
+
+body main .guides a {
+  display: inline-block;
+  font-family: 'B612', sans-serif;
+  color: #171816;
+  text-decoration: none;
+  border-top: 1px solid #c6552c;
+  border-bottom: 1px solid #c6552c;
+  padding: 1rem 1.6rem;
+  margin: 1.6rem 1.6rem 7rem;
+}
+
+body main .guides a:hover {
+  color: #f5e7cb;
+  border-color: #1b1c1b;
+  background-color: #1b1c1b;
+}
+
+footer {
+  background-color: #1b1c1b;
+}
+
+footer h2 {
+  font-size: 7rem;
+  color: #171816;
+  font-weight: 900;
+  text-align: right;
+  margin: 9.2rem 1.6rem 4.2rem;
+}
+
+footer h2:last-of-type {
+  margin: 0 1.6rem 4.2rem;
+}
+
+footer p {
+  font-family: 'B612', sans-serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  margin: 0 1.6rem 5.4rem;
+  color: #f5e7cb;
+  text-align: right;
+}
+
+/* Problems: 
+ */
+/*# sourceMappingURL=styles.css.map */
