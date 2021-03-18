@@ -29,7 +29,11 @@ body {
         position: absolute;
         left: 0;
         right: 0;
+        top: 0;
         height: 7rem;
+        @media only screen and (min-width: 1300px) {
+            flex-direction: row;
+        }
         div {
             background-color: #171816;
         }
@@ -45,13 +49,20 @@ body {
                 color: #f5e7cb;
             }
             .hamburger-menu {
-                padding: 0 1.2rem
+                padding: 0 1.2rem;
+                @media only screen and (min-width: 1300px) {
+                    display:none;
+                }
             }
         }
         
         .menu-items {
             width:100%;
-            
+            display: flex;
+            flex-direction: column;
+            @media only screen and (min-width: 1300px) {
+                flex-direction: row;
+            }
             a.menu-item {
                 color:#f5e7cb;
                 font-family: 'B612', sans-serif;
@@ -72,6 +83,10 @@ body {
                 border-top: 1px solid #706b5e;
                 margin:0 1.6rem;
                 width: 100%;
+                @media only screen and (min-width: 1300px) {
+                    border: none;
+                    text-align: right;
+                }
                 a{
                     display:inline-block;
                     margin: 2rem 2rem 4rem 0; 
@@ -79,12 +94,19 @@ body {
                     color:#f5e7cb;
                     padding: 1rem;
                     text-decoration: none;
+                    @media only screen and (min-width: 1300px) {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
                 }
                 
             }
         }
         .hidden {
-                display:none;
+                
+                @media only screen and (max-width: 1299px) {
+                    // display:none;
+                }
         }
         
         
