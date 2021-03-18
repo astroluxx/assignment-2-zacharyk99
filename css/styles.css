@@ -58,7 +58,7 @@ body header .menu-items {
   width: 100%;
 }
 
-body header .menu-items .menu-item {
+body header .menu-items a.menu-item {
   color: #f5e7cb;
   font-family: 'B612', sans-serif;
   display: -webkit-box;
@@ -68,19 +68,33 @@ body header .menu-items .menu-item {
       -ms-flex-align: center;
           align-items: center;
   padding: 1.2rem 0;
+  text-decoration: none;
 }
 
-body header .menu-items .menu-item svg {
+body header .menu-items a.menu-item svg {
   margin: 0 1.6rem;
 }
 
 body header .calls-to-action {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body header .calls-to-action div {
-  border: 1px solid red;
-  color: red;
+  border-top: 1px solid #706b5e;
+  margin: 0 1.6rem;
+  width: 100%;
+}
+
+body header .calls-to-action div a {
+  display: inline-block;
+  margin: 2rem 2rem 4rem 0;
+  border: 1px solid #f5e7cb;
+  color: #f5e7cb;
+  padding: 1rem;
+  text-decoration: none;
 }
 
 body header h1 {
