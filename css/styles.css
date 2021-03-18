@@ -25,6 +25,10 @@ body header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -33,15 +37,57 @@ body header {
           align-items: center;
 }
 
+body header .logo-and-hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+body header .logo-and-hamburger .hamburger-menu {
+  padding: 0 1.2rem;
+}
+
+body header .menu-items {
+  width: 100%;
+}
+
+body header .menu-items .menu-item {
+  color: #f5e7cb;
+  font-family: 'B612', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.2rem 0;
+}
+
+body header .menu-items .menu-item svg {
+  margin: 0 1.6rem;
+}
+
+body header .calls-to-action {
+  width: 100%;
+}
+
+body header .calls-to-action div {
+  border: 1px solid red;
+  color: red;
+}
+
 body header h1 {
   font-family: Milkshake;
   font-size: 3.2rem;
   margin: 1.6rem;
   color: #f5e7cb;
-}
-
-body header svg {
-  margin-right: 1.6rem;
 }
 
 body main .for-designers {
@@ -201,7 +247,4 @@ footer p {
   color: #f5e7cb;
   text-align: right;
 }
-
-/* Problems: 
- */
 /*# sourceMappingURL=styles.css.map */
