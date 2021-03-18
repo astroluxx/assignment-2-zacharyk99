@@ -35,6 +35,14 @@ body header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 7rem;
+}
+
+body header div {
+  background-color: #171816;
 }
 
 body header .logo-and-hamburger {
@@ -48,6 +56,13 @@ body header .logo-and-hamburger {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+}
+
+body header .logo-and-hamburger h1 {
+  font-family: Milkshake;
+  font-size: 3.2rem;
+  margin: 1.6rem;
+  color: #f5e7cb;
 }
 
 body header .logo-and-hamburger .hamburger-menu {
@@ -97,11 +112,12 @@ body header .calls-to-action div a {
   text-decoration: none;
 }
 
-body header h1 {
-  font-family: Milkshake;
-  font-size: 3.2rem;
-  margin: 1.6rem;
-  color: #f5e7cb;
+body header .hidden {
+  display: none;
+}
+
+body main {
+  margin-top: 7rem;
 }
 
 body main .for-designers {
