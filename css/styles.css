@@ -85,6 +85,10 @@ body header .logo-and-hamburger .hamburger-menu {
   }
 }
 
+body header .logo-and-hamburger .hamburger-menu svg {
+  cursor: pointer;
+}
+
 body header .menu-items {
   width: 100%;
   display: -webkit-box;
@@ -169,11 +173,29 @@ body main .for-designers {
   padding-top: 4.8rem;
 }
 
+@media only screen and (min-width: 1300px) {
+  body main .for-designers {
+    background-image: url("../img/banner1300.webp");
+    position: relative;
+  }
+}
+
 body main .for-designers div {
   margin: 1.6rem 1.6rem 0;
   padding: 5.4rem 1.6rem 0;
   background-color: #daa03d;
   text-align: center;
+}
+
+@media only screen and (min-width: 1300px) {
+  body main .for-designers div {
+    top: 0;
+    left: 0;
+    margin-left: 13.2rem;
+    margin-right: 2rem;
+    width: 30%;
+    position: absolute;
+  }
 }
 
 body main .for-designers div h2 {
@@ -195,6 +217,12 @@ body main .for-designers div p {
 
 body main .articles div {
   padding-bottom: 6.4rem;
+}
+
+@media only screen and (min-width: 1300px) {
+  body main .articles div {
+    margin: 0 0 0 42%;
+  }
 }
 
 body main .articles div h2 {
@@ -240,10 +268,32 @@ body main .guides {
   margin: 2rem 0 0;
 }
 
+@media only screen and (min-width: 1300px) {
+  body main .guides {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10rem 0 4rem 2.4rem;
+  }
+  body main .guides .guides-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body main .guides .banner-card {
   position: relative;
   margin: 0 1.6rem;
   background-color: #171816;
+}
+
+@media only screen and (min-width: 1300px) {
+  body main .guides .banner-card {
+    width: 80%;
+    margin-left: 10rem;
+  }
 }
 
 body main .guides .banner-card h2 {
@@ -259,9 +309,24 @@ body main .guides .banner-card h3 {
   color: #f5e7cb;
 }
 
-body main .guides .banner-img {
+body main .guides .image-swap .banner-img {
   margin-top: -6rem;
   width: 100%;
+}
+
+body main .guides .image-swap .img2 {
+  width: 40%;
+  display: none;
+}
+
+@media only screen and (min-width: 1300px) {
+  body main .guides .image-swap .img1 {
+    display: none;
+  }
+  body main .guides .image-swap .img2 {
+    display: block;
+    width: 80%;
+  }
 }
 
 body main .guides ul {
@@ -269,9 +334,21 @@ body main .guides ul {
   list-style-position: inside;
 }
 
+@media only screen and (min-width: 1300px) {
+  body main .guides ul {
+    padding-top: 10rem;
+  }
+}
+
 body main .guides ul li {
   font-family: 'B612', sans-serif;
   padding: 1.6rem 0 0 1.6rem;
+}
+
+@media only screen and (min-width: 1300px) {
+  body main .guides ul li {
+    line-height: 0.4;
+  }
 }
 
 body main .guides ul li:last-of-type {
@@ -311,6 +388,13 @@ footer h2:last-of-type {
   margin: 0 1.6rem 4.2rem;
 }
 
+@media only screen and (min-width: 1300px) {
+  footer h2 {
+    font-size: 15rem;
+    text-transform: uppercase;
+  }
+}
+
 footer p {
   font-family: 'B612', sans-serif;
   font-style: italic;
@@ -319,4 +403,7 @@ footer p {
   color: #f5e7cb;
   text-align: right;
 }
+
+/* (DONE) make guides320.webp hide when it goes to 1300px, and show guides566.webp */
+/* (NEEDS FIXING, BUT IT'S A START) make the .for-designers card overlay about 1/4 over the .articles section */
 /*# sourceMappingURL=styles.css.map */

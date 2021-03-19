@@ -34,6 +34,7 @@ body {
         @media only screen and (min-width: 1300px) {
             flex-direction: row;
         }
+        
         div {
             background-color: #171816;
         }
@@ -52,6 +53,9 @@ body {
                 padding: 0 1.2rem;
                 @media only screen and (min-width: 1300px) {
                     display:none;
+                }
+                svg {
+                    cursor:pointer;
                 }
             }
         }
@@ -103,7 +107,6 @@ body {
             }
         }
         .hidden {
-                
                 @media only screen and (max-width: 1299px) {
                     // display:none;
                 }
@@ -118,11 +121,24 @@ body {
             background-repeat: no-repeat;
             background-size: cover;
             padding-top:4.8rem;
+            @media only screen and (min-width: 1300px) {
+                background-image: url("../img/banner1300.webp");
+                position: relative;
+            }
             div {
+                
                 margin: 1.6rem 1.6rem 0;
                 padding: 5.4rem 1.6rem 0;
                 background-color: #daa03d;
                 text-align: center;
+                @media only screen and (min-width: 1300px) {
+                    top: 0;
+                    left: 0;
+                    margin-left: 13.2rem;
+                    margin-right: 2rem;  
+                    width: 30%;
+                    position: absolute;
+                }
                 h2 {
                     font-family: Milkshake;
                     font-size: 3.9rem;
@@ -142,6 +158,9 @@ body {
         .articles {
             div {
                 padding-bottom: 6.4rem;
+                @media only screen and (min-width: 1300px) {
+                    margin: 0 0 0 42%;
+                }
                 h2 {
                     color:#c6552c;
                     font-weight: 900;
@@ -180,10 +199,23 @@ body {
             padding-top: 7.5rem;
             background-color: #daa03d;
             margin: 2rem 0 0;
+            @media only screen and (min-width: 1300px) {
+                display: flex;
+                padding: 10rem 0 4rem 2.4rem;
+                .guides-column {
+                    flex-direction:column;
+                }
+            }
+            
             .banner-card {
                 position: relative;
                 margin: 0 1.6rem;
                 background-color: #171816;
+                @media only screen and (min-width:1300px) {
+                    
+                    width: 80%;
+                    margin-left: 10rem;
+                }
                 h2{
                     padding: 2.2rem 0 0 1.6rem; 
                     color: #c6552c;
@@ -197,14 +229,36 @@ body {
                 }
                 
             }
-            .banner-img {
-                margin-top: -6rem;
-                width:100%;
+            .image-swap{
+                .banner-img {
+                    margin-top: -6rem;
+                    width:100%;
+                }
+                .img2{
+                    width: 40%;
+                    display: none;
+                }
+                @media only screen and (min-width: 1300px) {
+                    .img1 {
+                        display:none;
+                    }
+                    .img2 {
+                        display:block;
+                        width:80%;
+                        
+                    }
+                }
             }
                 ul {
                     list-style-type: disc; 
                     list-style-position: inside; 
+                    @media only screen and (min-width: 1300px) {
+                        padding-top: 10rem;
+                    }
                     li {
+                        @media only screen and (min-width: 1300px) {
+                            line-height: 0.4;
+                        }
                         font-family: 'B612', sans-serif;
                         padding: 1.6rem 0 0 1.6rem;
                         &:last-of-type {
@@ -227,6 +281,7 @@ body {
                     background-color:#1b1c1b;
                 }
             }
+            
         }
     }
 }
@@ -243,6 +298,11 @@ footer {
         &:last-of-type {
             margin: 0 1.6rem 4.2rem;
         }
+        
+        @media only screen and (min-width: 1300px) {
+            font-size: 15rem;
+            text-transform: uppercase;
+        }
     }
     p {
         font-family: 'B612', sans-serif;
@@ -254,3 +314,5 @@ footer {
     }
 }
 
+/* (DONE) make guides320.webp hide when it goes to 1300px, and show guides566.webp */
+/* (NEEDS FIXING, BUT IT'S A START) make the .for-designers card overlay about 1/4 over the .articles section */

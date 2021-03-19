@@ -17,12 +17,12 @@
         <div class="logo-and-hamburger">
             <h1>Brackets</h1>
                 <div class="hamburger-menu">
-                    <svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height=33 width=33>
+                    <svg id="hamburger-icon" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height=30 width=30>
                     <use xlink:href="#icon-hamburger-menu" />
                     </svg>
                 </div>
         </div>
-        <div class="menu-items hidden">
+        <div class="menu-items hidden" id="dropdown">
             <a href="#" class="menu-item">
                 <svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height=33 width=33>
                 <use xlink:href="#icon-article-icon" />
@@ -41,11 +41,12 @@
                 </svg> 
                 <div>EXPERIENCES</div>
             </a>
-        </div>
-        <div class="calls-to-action hidden">
-            <div>
-                <a href="#" class="call-to-action">SIGN IN</a>
-                <a href="#" class="call-to-action">SUBSCRIBE</a>
+            
+            <div class="calls-to-action hidden">
+                <div>
+                    <a href="#" class="call-to-action">SIGN IN</a>
+                    <a href="#" class="call-to-action">SUBSCRIBE</a>
+                </div>
             </div>
         </div>
     </header>
@@ -66,11 +67,17 @@
             </div>
         </section>
         <section class="guides">
+            <div class="guides-column">
                 <div class="banner-card">
                     <h2>QUICK REFERENCES</h2>
                     <h3>Guides</h3>
                 </div>
-                <img src="img/guides320.webp" class="banner-img" alt="Woman sitting on the floor between a couch and coffee table working on her laptop">
+                <div class="image-swap">
+                    <img src="img/guides566.webp" class="banner-img img2" alt="Woman sitting on the floor between a couch and coffee table working on her laptop, but 246px bigger">
+                    <img src="img/guides320.webp" class="banner-img img1" alt="Woman sitting on the floor between a couch and coffee table working on her laptop">
+                </div>
+            </div>
+            <div class="guide-list">
                 <ul>
                     <li>HTML5</li>
                     <li>CSS Layouts</li>
@@ -81,6 +88,7 @@
                     <li>Performance</li>
                 </ul>
                 <a href="#">SEE THE GUIDES</a>
+            </div>
     </section>
     </main>
     <footer>
@@ -111,7 +119,7 @@
         </symbol>
         </defs>
         </svg>
-    
+    <script src="js/main.js"></script>
     
 </body>
 </html>
